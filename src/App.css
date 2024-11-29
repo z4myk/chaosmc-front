@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  background-color: #121313;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html::-webkit-scrollbar{
+  background-color: black !important;
+  border-radius: 15x;
+  width: 5px;
+
+  
+}
+html::-webkit-scrollbar-thumb{
+  background-color: #ec0d0d !important;
+  width: 10px;
+  border-radius: 20px;
+}
+
+
+
+.logoNavbar{
+  width: 200px;
+}
+
+@keyframes breathing {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1); /* Aumenta el tamaño al 110% */
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Aplicar la animación al logo */
+.logo {
+  animation: breathing 3s infinite; /* Duración de 3 segundos y repetición infinita */
+}
+
+.navbarBackground{
+  background-color: #181818;
+  
+}
+
+
+.buttonInternational {
+  padding: 0.5em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #c71919;
+ }
+ 
+ .buttonInternational::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #c71919;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .buttonInternational:hover::before {
+  width: 105%;
+ }
+ 
+ .buttonInternational:hover {
+  color: #111;
+ }
+ 
+
+
+
+
+
+.button {
+  padding: 0.5em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+ }
+ 
+ .button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .button:hover::before {
+  width: 105%;
+ }
+ 
+ .button:hover {
+  color: #111;
+ }
+ 
+
+
+ .buttonLogin {
+  padding: 0.5em 1.8em;
+  border: 2px solid #000000;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #d1d1d1;
+ }
+ 
+ .buttonLogin::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #121313  ;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .buttonLogin:hover::before {
+  width: 105%;
+ }
+ 
+ .buttonLogin:hover {
+  color: rgb(255, 255, 255);
+ }
+ 
+
+ .boxFooter{
+   border-left: 1px solid rgba(174, 26, 0, 0.097);
+ }
+
+ .textHeader{
+   color:#ec0d0d ;
+   transition: text-shadow 0.3s ease-in-out;
+  cursor: pointer;
+ }
+
+ .textHeader:hover{
+  text-shadow: 0 0 3px #ec0d0d;
+ }
+
+ a {
+  text-decoration: none; /* Elimina el subrayado por defecto */
+  color: inherit; /* Hereda el color del texto de su contenedor */
+  cursor: pointer; /* Cambia el cursor a puntero por defecto */
+}
+
+
+a:hover {
+  color: inherit; /* Mantiene el color del texto al pasar el ratón por encima */
+  text-decoration: none; /* Mantiene la eliminación del subrayado al pasar el ratón por encima */
+}
+
+.parrafoHeader{
+  margin-bottom: 0;
+}
+
+
+
+.pin{
+  background: green;
+  position: absolute;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  
+  }
+  
+  .pin::before{
+  content: '';
+  background: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation:
+  pulse 1.3s ease-in-out infinite;
+  }
+  
+  
+  .pin span {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  left: 1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 3em;
+  padding: 0.3em 0.6em;
+  font-size: 0.9em;
+  
+  }
+
+  @keyframes pulse{
+    100% {
+    opacity: 0;
+    transform: 
+    translate(-50%, -50%)
+    scale(2.5);
+    }
+    }
+
+    .kickLogo{
+      width: 200px;
+    }
+
+    
+
+    .buttonKick {
+      outline: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #40b361;
+      min-width: 200px;
+      border: 0;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+      box-sizing: border-box;
+      padding: 16px 20px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    .buttonKick:hover {
+      opacity: .95;
+    }
+    
+    .buttonKick .animation {
+      border-radius: 100%;
+      animation: ripple 0.6s linear infinite;
+    }
+    
+    @keyframes ripple {
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+      }
+    
+      100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+      }
+    }
+    iframe{
+      border: 2px solid green;
+      
+    }
+
+.inputLogin{
+  background-color: #1a1a1a !important;
+  border: 1px solid #2c2c2c;
+  
+}
+
+
+.headerContainer{
+  background-image: url('assets/fondoheader.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 40px;
+    margin-top: -9px;
+    
+ 
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border: 5px solid rgb(255, 17, 0);
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation: rot5 1s infinite;
+}
+
+@keyframes rot5 {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(180deg);
+    border-top-color: rgb(139, 46, 46);
+    border-bottom-color: rgb(243, 92, 33);
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cardsContainer{
+  background-image: url('assets/fondocards.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 40px;
+    margin-top: -9px;
+    transition: filter 0.5s ease, transform 0.3s ease;
+    width: 330px;
+}
+
+.cardsContainerOrders{
+  background-image: url('assets/fondocards.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    width: 330px;
+}
+
+
+
+.cardServers{
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  transition: transform 0.3s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+
+.cardsContainer:hover{
+  filter: grayscale(100%);
+  
+  transform: translateY(-10px);
+}
+
+
+
+.card{
+  background-color: #00000048 !important;
+  border: 1px solid #ec0d0d;
+  cursor: pointer;
+}
+.card:hover{
+  box-shadow: 0 0 5px #ec0d0d;
+  
+}
+
+
+.imageProducts{
+  width: 200px;
+}
+
+
+.imageCartProducts{
+  width: 50px;
+}
+
+.cartCard{
+  border: 1px, solid, #ec0d0d
+}
+
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  transition: transform 0.3s ease, border-color 0.7s ease;
+  border: 1px solid transparent;
+}
+
+.image-container:hover {
+  transform: translateY(-10px) scale(1.05);
+  border-color: rgba(255, 0, 0, 0.72);
+}
+
+.image-container img {
+  display: block;
+  width: 500px;
+  transition: transform 0.7s ease;
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0.857, 0.857), transparent);
+  transition: background 0.3s ease;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 2;
+  background: linear-gradient(45deg, black, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  transition: text-shadow 0.3s ease, background-position 0.3s ease;
+}
+
+.image-container:hover .overlay-text {
+  text-shadow: 0 0 1px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
+  background-position: 100% 0;
+}
+
+/* From Uiverse.io by elijahgummer */ 
+.styled-button {
+  position: relative;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(to bottom, #171717, #242424);
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #292929;
+}
+
+.styled-button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  background: linear-gradient(to bottom, #292929, #000000);
+  z-index: -1;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  opacity: 1;
+}
+
+.styled-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 1), 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.styled-button .inner-button {
+  position: relative; /* Ensure relative positioning for pseudo-element */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #171717, #242424);
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+  border: 1px solid #252525;
+  transition: all 0.2s ease;
+}
+
+.styled-button .inner-button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  background: linear-gradient(to bottom, #292929, #000000);
+  z-index: -1;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  opacity: 1;
+}
+.styled-button .inner-button .icon {
+  filter: drop-shadow(0 10px 20px rgba(26, 25, 25, 0.9))
+    drop-shadow(0 0 4px rgba(0, 0, 0, 1));
+  transition: all 0.4s ease-in-out;
+}
+.styled-button .inner-button .icon:hover {
+  filter: drop-shadow(0 10px 20px rgba(50, 50, 50, 1))
+    drop-shadow(0 0 20px rgba(2, 2, 2, 1));
+  transform: rotate(-35deg);
+}
+
+
+.cardServersProducts:hover{
+  border: 1px solid rgb(255, 0, 0);
+  transform: translateY(-5px) scale(1.02); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+
+  background: linear-gradient(to top, rgba(255, 0, 0, 0.2), transparent);
+  
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .headerMobile{
+    margin-left: 40px;
+  }
+
+ .mostPurchaseItemsMobile{
+  padding: 20px;
+ }
+ 
+}
